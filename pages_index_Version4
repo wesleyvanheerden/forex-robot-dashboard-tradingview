@@ -1,0 +1,14 @@
+import Head from "next/head";
+import Dashboard from "../components/Dashboard";
+
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>Forex Robot Dashboard</title>
+        <meta name="description" content="Forex trading dashboard with TradingView integration" />
+      </Head>
+      <Dashboard />
+    </>
+  );
+}
