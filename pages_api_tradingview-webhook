@@ -1,0 +1,12 @@
+export default function handler(req, res) {
+  if (req.method === "POST") {
+    // Example: Log the TradingView webhook payload
+    console.log("TradingView Webhook Data:", req.body);
+
+    // TODO: Add your trading logic here
+
+    res.status(200).json({ success: true, message: "Webhook received." });
+  } else {
+    res.status(405).json({ error: "Method not allowed" });
+  }
+}
