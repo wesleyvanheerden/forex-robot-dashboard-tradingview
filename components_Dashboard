@@ -1,0 +1,15 @@
+import React from "react";
+
+export default function Dashboard() {
+  return (
+    <main style={{ padding: "2rem" }}>
+      <h1>Forex Robot Dashboard</h1>
+      <p>Welcome to your trading bot dashboard. Configure and monitor your robots here.</p>
+      {/* Add widgets/components below */}
+      <section>
+        <h2>TradingView Webhook Status</h2>
+        <p>Webhook endpoint: <code>/api/tradingview-webhook</code></p>
+      </section>
+    </main>
+  );
+}
